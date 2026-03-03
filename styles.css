@@ -1,0 +1,451 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* -------------------------
+   CSS VARIABLES
+-------------------------- */
+
+:root {
+    --primary-color: #1f2a44;
+    /* deep navy */
+    --secondary-color: #6c7a99;
+    /* muted lavender blue */
+    --accent-color: #c9d4f1;
+    /* mist tone */
+    --background-color: #f4f6fb;
+    /* soft light */
+    --white: #ffffff;
+    --border-color: #dde3f2;
+}
+
+/* -------------------------
+   GLOBAL STYLES
+-------------------------- */
+
+body {
+    font-family: "Cormorant Garamond", "Georgia", serif;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* Fixed width & centered layout */
+header,
+main,
+footer {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+/* -------------------------
+   HEADER
+-------------------------- */
+
+header {
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--border-color);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+h1 a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+/* -------------------------
+   NAVIGATION
+-------------------------- */
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+    position: relative;
+}
+
+/* Hover */
+nav a:hover {
+    color: var(--primary-color);
+}
+
+/* Focus */
+nav a:focus {
+    outline: 2px solid var(--secondary-color);
+    outline-offset: 4px;
+}
+
+/* Active page */
+nav a.active {
+    color: var(--primary-color);
+    font-weight: 600;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 4px;
+}
+
+/* -------------------------
+   HERO IMAGE
+-------------------------- */
+
+.hero {
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* -------------------------
+   HEADINGS
+-------------------------- */
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin: 1.5rem 0 1rem 0;
+}
+
+/* -------------------------
+   CONTENT SECTIONS
+-------------------------- */
+
+section {
+    margin-bottom: 4rem;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+}
+
+section p {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content-row {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.content-row img {
+    width: 50%;
+    height: auto;
+    margin-bottom: 0;
+}
+
+.content-row div {
+    width: 50%;
+}
+
+.content-row h3 {
+    text-align: center;
+}
+
+.content-row p {
+    text-align: left;
+    margin: 0;
+}
+
+/* -------------------------
+   FOOTER
+-------------------------- */
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.95rem;
+    color: var(--secondary-color);
+}
+
+/* -------------------------
+   FORM STYLES
+-------------------------- */
+
+form {
+    max-width: 100%;
+    margin: 2rem auto;
+    display: flex;
+    gap: 4rem;
+}
+
+.form-left,
+.form-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+label {
+    font-size: 1rem;
+}
+
+input,
+textarea {
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+/* Focus state */
+input:focus,
+textarea:focus {
+    outline: none;
+    border: 1px solid var(--secondary-color);
+    box-shadow: 0 0 6px rgba(108, 122, 153, 0.3);
+}
+
+/* Invalid state */
+input:invalid,
+textarea:invalid {
+    border: 1px solid #c96c6c;
+}
+
+/* Radio group spacing */
+.radio-group {
+    border: 1px solid var(--border-color);
+    padding: 1.5rem;
+    border-radius: 6px;
+}
+
+.radio-group legend {
+    font-weight: 600;
+}
+
+.radio-list {
+    display: flex;
+    align-items: center;
+}
+
+.radio-options {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex: 1;
+}
+
+.radio-options label {
+    cursor: pointer;
+}
+
+.radio-options input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.radio-options input[type="radio"]:checked {
+    border-color: var(--primary-color);
+    background-color: var(--accent-color);
+}
+
+.radio-options input[type="radio"]:checked::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.radio-options input[type="radio"]:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(108, 122, 153, 0.4);
+}
+
+/* Submit button */
+button {
+    padding: 0.9rem;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover */
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Focus */
+button:focus {
+    outline: 2px solid var(--secondary-color);
+    outline-offset: 4px;
+}

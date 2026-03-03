@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Raphael Lee">
+    <meta name="description"
+        content="Contact Naru Moon Resort to plan your dream vacation in the Swiss Alps. We are happy to assist with reservations and questions.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naru Moon Resort | Contact</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1><a href="index.html">Naru Moon Resort</a></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Accommodations</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <img src="images/swiss-valley.jpg" alt="Scenic valley landscape in the Swiss Alps with mountains and greenery"
+            width="1200" height="600">
+    </div>
+
+    <main>
+        <section>
+            <h2>Contact Us</h2>
+
+            <p>
+                Please reach out to us with any questions or concerns.
+                We are happy to help you plan your dream vacation with us!
+                Required fields marked with a *
+            </p>
+
+            <img src="images/swiss-sunset.jpg" alt="Sunset view over the Swiss Alps with warm evening light"
+                width="1280" height="600">
+
+            <form method="post" action="https://wp.zybooks.com/form-viewer.php">
+
+                <div class="form-left">
+                    <label for="fullname">Full Name *</label>
+                    <input type="text" id="fullname" name="fullname" required>
+
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-right">
+
+                    <fieldset class="radio-group">
+                        <legend>Preferred Contact Method *</legend>
+
+                        <div class="radio-list">
+                            <div class="radio-options">
+                                <input type="radio" id="contact-email" name="contact-method" value="email" required>
+                                <label for="contact-email">Email</label>
+                            </div>
+
+                            <div class="radio-options">
+                                <input type="radio" id="contact-phone" name="contact-method" value="phone">
+                                <label for="contact-phone">Phone</label>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <label for="comments">Comments *</label>
+                    <textarea id="comments" name="comments" rows="5" required></textarea>
+
+                    <button type="submit">Submit</button>
+
+                </div>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Copyright ©2023 - Naru Moon Resort</p>
+        <p>This site is for educational purposes only</p>
+    </footer>
+
+</body>
+
+</html>
